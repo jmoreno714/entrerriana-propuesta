@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Entrerriana · Pollo, pescado y rebozados en Tucumán</title>
+<meta name="description" content="Pollo, pescado, rebozados, mariscos y huevos por mayor y menor. Pedís hoy y recibís mañana en el Gran San Miguel de Tucumán y el sur de la provincia.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body data-pagina="inicio">
+
+<main id="inicio">
+  <section class="fachada" aria-labelledby="titulo-hero">
+    <div class="letrero" aria-hidden="true">LA ENTRERRIANA</div>
+    <div class="wrap">
+      <div class="hero-txt">
+        <h1 id="titulo-hero">Pedís hoy, <span>recibís mañana</span></h1>
+        <p>Pollo, pescado, rebozados, mariscos y huevos, por mayor y menor. Con reparto propio en el Gran San Miguel de Tucumán y el sur de la provincia.</p>
+        <div class="entrega"><svg class="i"><use href="#i-camion"/></svg><span>Si pedís hoy, te llega el <b data-fecha-entrega>día siguiente</b>, de 8 a 20 h</span></div>
+        <div class="acciones">
+          <a class="btn btn-negro" href="catalogo.html"><svg class="i"><use href="#i-carro"/></svg>Armar mi pedido</a>
+          <a class="btn btn-linea" href="sucursales.html">Ver sucursales</a>
+        </div>
+      </div>
+      <div class="camion"><img src="img/camion.webp" alt="Camión de reparto de La Entrerriana" width="1600" height="923"></div>
+    </div>
+  </section>
+
+  <section class="sellos" aria-labelledby="titulo-sellos">
+    <div class="wrap">
+      <h2 id="titulo-sellos">Elegí categoría</h2>
+      <div class="fila-sellos" id="sellos-home"></div>
+    </div>
+  </section>
+
+  <section class="populares" aria-labelledby="titulo-pop">
+    <div class="wrap">
+      <div class="cab-seccion">
+        <div>
+          <h2 id="titulo-pop">Los más pedidos</h2>
+          <p>Lo que más sale de las heladeras. Agregalo directo a tu pedido. Selección y precios de ejemplo.</p>
+        </div>
+        <a class="link-flecha" href="catalogo.html">Ver todo el catálogo<svg class="i"><use href="#i-flecha"/></svg></a>
+      </div>
+      <div class="grilla-prod" id="populares"></div>
+    </div>
+  </section>
+
+  <section class="pilares" aria-labelledby="titulo-pil">
+    <div class="wrap">
+      <p class="anios" id="titulo-pil"><span>+</span>20<small>años de trayectoria</small></p>
+      <ul class="lista-pilares">
+        <li><b>Ventas por mayor y menor</b><p>Para la mesa de tu casa o para tu comercio: por kilo, por bolsa o por caja.</p></li>
+        <li><b>Logística y distribución</b><p>Camiones propios que reparten de 8 a 20 h en el Gran San Miguel de Tucumán y el sur de la provincia.</p></li>
+        <li><b>Asesoramiento comercial</b><p>Te ayudamos a armar el pedido de tu negocio según lo que vendés.</p></li>
+        <li><b>Productos premium</b><p>Productos de calidad, al mejor precio.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pasos-cortos" aria-labelledby="titulo-pc">
+    <div class="wrap">
+      <div class="cab-seccion">
+        <div>
+          <h2 id="titulo-pc">Así de fácil</h2>
+          <p>El pedido sale armado por WhatsApp a la sucursal que elijas. No hace falta llamar ni dictar productos.</p>
+        </div>
+        <a class="link-flecha" href="como-pedir.html">Cómo pedir, paso a paso<svg class="i"><use href="#i-flecha"/></svg></a>
+      </div>
+      <ol>
+        <li><b>Armás el pedido</b><p>Elegís productos y cantidades en el catálogo.</p></li>
+        <li><b>Elegís cómo recibirlo</b><p>Retiro en sucursal o envío a domicilio.</p></li>
+        <li><b>Lo mandás por WhatsApp</b><p>El mensaje sale escrito con todo el detalle.</p></li>
+        <li><b>Te llega mañana</b><p>De 8 a 20 h, con nuestro reparto propio.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="mayoristas" aria-labelledby="titulo-may">
+    <img src="img/camiones.webp" alt="" width="1400" height="814" loading="lazy">
+    <div class="wrap">
+      <h2 id="titulo-may">¿Tenés un <em>comercio?</em></h2>
+      <p>Rotiserías, restaurantes, almacenes y carnicerías. Comprá por caja y recibí con nuestra logística propia.</p>
+      <ul><li>Venta por caja</li><li>Logística y distribución</li><li>Asesoramiento comercial</li></ul>
+      <a class="btn btn-amarillo" href="mayoristas.html">Ver venta por mayor<svg class="i"><use href="#i-flecha"/></svg></a>
+    </div>
+  </section>
+
+  <section class="donde" aria-labelledby="titulo-donde">
+    <div class="wrap">
+      <div class="cab-seccion">
+        <div>
+          <h2 id="titulo-donde">Dónde estamos</h2>
+          <p>Tres sucursales en Tucumán. Elegí una para verla en el mapa.</p>
+        </div>
+        <a class="link-flecha" href="sucursales.html">Todas las sucursales<svg class="i"><use href="#i-flecha"/></svg></a>
+      </div>
+      <div id="mapa-home"></div>
+    </div>
+  </section>
+</main>
+
+<script src="comun.js"></script>
+<script>
+(() => {
+  const { CATS, POPULARES, $, esc, prodDe, selloGrande, tarjeta, activarTarjetas, mapaBloque } = window.LE;
+  $("#sellos-home").innerHTML = CATS.map((c) => `<a class="sello${c.img ? "" : " huevo"}" href="catalogo.html?cat=${c.id}">${selloGrande(c)}<span>${esc(c.nombre)}</span></a>`).join("");
+  const pop = $("#populares");
+  pop.innerHTML = POPULARES.map((id) => tarjeta(prodDe(id))).join("");
+  activarTarjetas(pop);
+  mapaBloque($("#mapa-home"));
+})();
+</script>
+</body>
+</html>

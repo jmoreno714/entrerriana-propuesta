@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sucursales · La Entrerriana</title>
+<meta name="description" content="Sucursales de La Entrerriana en San Miguel de Tucumán, Concepción y Monteros. Direcciones, teléfonos y mapa.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body data-pagina="sucursales">
+
+<main>
+  <section class="cab-pagina" aria-labelledby="titulo-pag">
+    <div class="wrap">
+      <div>
+        <p class="miga"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Sucursales</span></p>
+        <h1 id="titulo-pag">Sucursales</h1>
+        <p>San Miguel de Tucumán, Concepción y Monteros. Retirá tu pedido o recibilo en tu casa al día siguiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="donde" aria-label="Mapa de sucursales" style="background-image:none;background-color:var(--chapa)">
+    <div class="wrap" style="padding-top:48px">
+      <div id="mapa-suc"></div>
+      <div class="donde-extra">
+        <div class="local-foto"><img src="img/local.webp" alt="Frente del local de La Entrerriana" width="900" height="826" loading="lazy"></div>
+        <div class="ficha">
+          <h2>Reparto</h2>
+          <div><svg class="i"><use href="#i-reloj"/></svg><span>De 8 a 20 h, al día siguiente del pedido.</span></div>
+          <div><svg class="i"><use href="#i-camion"/></svg><span>Gran San Miguel de Tucumán y sur de la provincia, con camiones propios.</span></div>
+          <div><svg class="i"><use href="#i-wa"/></svg><span>Hacé el pedido desde el catálogo y mandalo por WhatsApp a la sucursal que elijas.</span></div>
+          <a class="btn btn-amarillo" href="catalogo.html" style="justify-self:start;margin-top:6px"><svg class="i"><use href="#i-carro"/></svg>Armar mi pedido</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="comun.js"></script>
+<script>window.LE.mapaBloque(window.LE.$("#mapa-suc"));</script>
+</body>
+</html>

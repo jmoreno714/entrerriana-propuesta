@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catálogo · La Entrerriana</title>
+<meta name="description" content="Catálogo de pollo, pescados y mariscos, rebozados, huevos, envasados y verduras congeladas. Armá tu pedido y mandalo por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body data-pagina="catalogo">
+
+<main>
+  <section class="cab-pagina" aria-labelledby="titulo-pag">
+    <div class="wrap">
+      <div>
+        <p class="miga"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Catálogo</span></p>
+        <h1 id="titulo-pag">Catálogo</h1>
+        <p>Elegí una categoría, buscá lo que necesitás y armá el pedido. Por kilo, por bolsa o por caja.</p>
+      </div>
+      <div class="entrega"><svg class="i"><use href="#i-camion"/></svg><span>Pedí hoy y te llega el <b data-fecha-entrega>día siguiente</b></span></div>
+    </div>
+  </section>
+
+  <section class="sellos" aria-label="Categorías">
+    <div class="wrap">
+      <h2>Categorías</h2>
+      <div class="fila-sellos" id="fila-sellos"></div>
+    </div>
+  </section>
+
+  <section class="deposito pagina" aria-labelledby="titulo-catalogo">
+    <div class="wrap">
+      <div class="caja" id="catalogo"></div>
+    </div>
+  </section>
+</main>
+
+<script src="comun.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>
