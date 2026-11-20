@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo: asistente de pedidos por WhatsApp · La Entrerriana</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+@font-face{font-family:"Geist";src:url("../fuente/geist-400.woff2") format("woff2");font-weight:400}
+@font-face{font-family:"Geist";src:url("../fuente/geist-600.woff2") format("woff2");font-weight:600}
+:root{--amarillo:#F5C70E;--negro:#1d1c1a;--tinta:#26241f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--amarillo);color:var(--tinta);font:400 18px/1.5 "Geist",system-ui,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:40px 16px 56px}
+.aviso{font-size:15px;color:#4a4232;margin:0 0 10px}
+h1{font-weight:600;font-size:clamp(28px,4.4vw,44px);line-height:1.1;margin:0 0 12px;color:var(--negro)}
+p{margin:0 0 20px;max-width:720px}
+video{display:block;width:100%;height:auto;border-radius:16px;background:var(--negro)}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+a.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:12px;font-weight:600;text-decoration:none}
+.negro{background:var(--negro);color:#fff}
+.linea{border:2px solid var(--negro);color:var(--negro)}
+a:focus-visible{outline:3px solid var(--negro);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <p class="aviso">Preparado por JM Digital Consulting · productos, precios y reglas de reparto de ejemplo</p>
+  <h1>Asistente de pedidos por WhatsApp</h1>
+  <p>El cliente escribe como siempre. El asistente arma el pedido, pide la dirección, confirma la entrega, responde consultas y le pasa el pedido listo a la sucursal.</p>
+  <video src="demo-bot-entrerriana.mp4" poster="poster.jpg" controls autoplay muted loop playsinline width="1920" height="1080"></video>
+  <div class="acciones">
+    <a class="btn negro" href="https://wa.me/5493815886197?text=Hola%20Joaqu%C3%ADn%2C%20vi%20la%20demo%20del%20asistente%20de%20pedidos" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    <a class="btn linea" href="../index.html">Ver la maqueta de la web</a>
+  </div>
+</main>
+</body>
+</html>
